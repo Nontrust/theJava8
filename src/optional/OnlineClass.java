@@ -17,6 +17,11 @@ public class OnlineClass {
 	public void setProgress(Progress progress) {
 		this.progress = progress;
 	}
+	
+	/*null이 사용될 수 있으니 사용 주의*/
+//	public void setProgress(Optional<Progress> progress) {
+//		progress.ifPresent((prg) -> this.progress = prg );
+//	}
 
 	public OnlineClass(Integer id, String title, boolean closed) {
 		this.id = id;
